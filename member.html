@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>前端</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <nav class="head">
+            <!-- logo -->
+            <div class="header_logo_out">
+                <div class="header_logo">
+                    <img class="img-fluid header_logo_img" src="img/head/logow.png" alt="">
+                </div>
+            </div>
+            <div class="header_link">
+                <ul>
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">前端</a>
+                    </li>
+                    <li>
+                        <a href="#">漫画</a>
+                    </li>
+                    <li>
+                        <a href="#">生活</a>
+                    </li>
+                    <li>
+                        <a href="#">成员</a>
+                    </li>
+                    <li>
+                        <a href="#">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- 内容 -->
+    <div class="content content_web">
+
+        <div id="web_canvas" class="web_canvas">
+        </div>
+        <div class="canvas_text">
+            <h1>小毛驴小毛驴小毛驴小毛驴小毛驴小毛驴小毛驴</h1>
+        </div>
+
+    </div>
+    <img class="img-fluid" src="img/home/1.jpg" alt="">
+
+
+    <div class="footer">
+        <div>
+            友情链接:
+            <a href="http://www.wjceo.com/">暮志未晚</a>
+        </div>
+        <div>Copyright ©2016 代号57 All Rights Reserved 苏ICP备16068436号</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/three.min.js"></script>
+    <script type="text/javascript" src="js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="js/Stats.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script>
+        $(function () {
+            var nav = $(".header"); //得到导航对象
+            var win = $(window); //得到窗口对象
+            var sc = $(document);//得到document文档对象。
+            var hei = $(".header").height();
+            win.scroll(function () {
+                if (sc.scrollTop() >= hei) {
+                    nav.addClass("header_change");
+                    $(".header_logo_img").attr("src", "img/head/logo2.png");
+                } else {
+                    nav.removeClass("header_change");
+                    $(".header_logo_img").attr("src", "img/head/logow.png");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
