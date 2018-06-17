@@ -54,6 +54,18 @@ li {
   color: white;
 }
 
+.Blackfont {
+  color: black;
+}
+
+.Bolderfont {
+  font-weight: bolder;
+}
+
+.Lighterfont {
+  font-weight: lighter;
+}
+
 .BGtransparent {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -263,5 +275,36 @@ li {
 
 .web_con1_li {
   padding-bottom: 15px;
+}
+
+.wl_search {
+  background-image: url(../img/weblist/weblistsearch.jpg);
+  height: 436px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wl_search_inner {
+  padding-top: 134px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wl_search_02_form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+
+.wl_search_02_input {
+  width: 90%;
+  height: 54px;
+  border: 1px solid #ced4da;
+}
+
+.wl_search_02_btn {
+  width: 10%;
+  height: 54px;
 }
 /*# sourceMappingURL=style.css.map */

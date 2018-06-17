@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>前端</title>
+    <title>联系我们</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/BaiDuMap.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 
 <body>
@@ -44,18 +46,17 @@
             </div>
         </nav>
     </div>
-    <!-- 内容 -->
-    <div class="content content_web">
+    <div class="content content_home">
+        <!--百度地图容器-->
+        <div class="container-fluid">
+            <div class="row">
+                <div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+                <script src="js/BaiduMap.js"></script>
+            </div>
 
-        <div id="web_canvas" class="web_canvas">
         </div>
-        <div class="canvas_text">
-            <h1>小毛驴小毛驴小毛驴小毛驴小毛驴小毛驴小毛驴</h1>
-        </div>
-
+        <img class="img-fluid" src="img/home/1.jpg" alt="">
     </div>
-    <img class="img-fluid" src="img/home/1.jpg" alt="">
-
 
     <div class="footer">
         <div>
@@ -70,10 +71,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/three.min.js"></script>
-    <script type="text/javascript" src="js/dat.gui.min.js"></script>
-    <script type="text/javascript" src="js/Stats.min.js"></script>
-    <script src="js/canvas.js"></script>
     <script>
         $(function () {
             var nav = $(".header"); //得到导航对象
