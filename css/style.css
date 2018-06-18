@@ -290,6 +290,11 @@ li {
   margin: 0 auto;
 }
 
+.wl_search_02_nav {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
 .wl_search_02_form {
   width: 100%;
   display: flex;
@@ -306,5 +311,84 @@ li {
 .wl_search_02_btn {
   width: 10%;
   height: 54px;
+}
+
+.wl_title {
+  font-size: 28px;
+  font-weight: bolder;
+  margin: 20px 0;
+}
+
+.wl_list {
+  margin-bottom: 60px;
+}
+
+.wl_li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.wl_li_img {
+  width: 10%;
+  margin-right: 3%;
+}
+
+.wl_li_text {
+  width: 80%;
+}
+
+.wl_li_title01 {
+  font-size: 24px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.wl_li_title02 {
+  font-size: 18px;
+}
+
+.wl_pagination {
+  margin-bottom: 30px;
+}
+
+.webdetails_box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wb_01,
+.wb_02,
+.wb_03 {
+  height: 100%;
+}
+
+.wb_01 {
+  width: 30%;
+  background: #a4a4a4;
+}
+
+.wb_02 {
+  width: 45%;
+  background: #b5b5b5;
+  padding: 50px 15px;
+  overflow-y: scroll;
+}
+
+.wb_03 {
+  width: 45%;
+  background: #c6c6c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wb_03_box {
+  height: 50%;
+  width: 100%;
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */
