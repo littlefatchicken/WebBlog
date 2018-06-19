@@ -1,0 +1,12 @@
+.HideScrollBar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.HideScrollBar {
+  -ms-overflow-style: none;
+}
+
+.HideScrollBar {
+  overflow: -moz-scrollbars-none;
+}
+/*# sourceMappingURL=public.css.map */

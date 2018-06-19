@@ -1,0 +1,13 @@
+// publice css
+// 隐藏滚动条
+.HideScrollBar::-webkit-scrollbar {
+    width: 0 !important; // chrome Safari
+}
+
+.HideScrollBar {
+    -ms-overflow-style: none; // IE 10+
+}
+
+.HideScrollBar {
+    overflow: -moz-scrollbars-none; // Firefox
+}
