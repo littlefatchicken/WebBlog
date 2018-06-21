@@ -12,8 +12,7 @@
     <style>
         .dowebok {
             width: 100%;
-
-
+            margin-bottom: 0.5rem;
         }
 
         .dowebok a {
@@ -21,8 +20,16 @@
             color: #000;
             text-decoration: none;
             font-size: 1rem;
+            display: inline-block;
+            line-height: 1rem;
+            padding: 0 5px;
         }
 
+        .dowebok a:hover {
+            background: #bbc7e8;
+
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -280,16 +287,19 @@
 
             $('.about_scrolltext01').liMarquee(
                 {
-                    hoverstop: false
+                    hoverstop: false,
+                    scrollamount: 20
                 }
             );
             $('.about_scrolltext02').liMarquee({
                 direction: 'right',
-                hoverstop: false
+                hoverstop: false,
+                scrollamount: 20
             });
             $('.about_scrolltext03').liMarquee(
                 {
-                    hoverstop: false
+                    hoverstop: false,
+                    scrollamount: 20
                 }
             );
         })
