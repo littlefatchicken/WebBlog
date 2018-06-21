@@ -479,9 +479,37 @@ li {
   z-index: 1;
 }
 
+.about_01 {
+  position: relative;
+}
+
+.about_01_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #232323;
+}
+
+.about_03_title {
+  text-align: center;
+  font-size: 1.5rem;
+  background: #da2f2f;
+  padding: 1rem 0;
+  color: #fff;
+  letter-spacing: 1rem;
+  font-weight: bold;
+}
+
 .about_03_box {
   display: flex;
   justify-content: center;
+  padding: 5rem 0;
 }
 
 .about_03_box_li {

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>关于我们</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+            <nav class="head">
+                <!-- logo -->
+                <div class="header_logo_out">
+                    <div class="header_logo">
+                        <img class="img-fluid header_logo_img" src="img/head/logow.png" alt="">
+                    </div>
+                </div>
+                <div class="header_link">
+                    <ul>
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="Web.html">前端</a>
+                        </li>
+                        <li>
+                            <a href="Cartoon.html">漫画</a>
+                        </li>
+                        <li>
+                            <a href="Life.html">生活</a>
+                        </li>
+                        <li>
+                            <a href="About.html">关于</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">联系</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    <div class="content content_about">
+        <div class="about_01">
+            <img class="w-100" src="img/about/big_bg.jpg" alt="" srcset="">
+            <div class="about_01_text">
+                <span>
+                    About Us
+                </span>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="container-fluid about_03">
+            <div class="row">
+                <div class="about_03_inner col-12">
+                    <div class="about_03_box">
+                        <div class="about_03_box_li">
+                            <img src="img/about/hexagon.png" alt="">
+                            <div class="about_box">
+                                <div class="about_box01">
+                                    <div class="about_box02">
+                                        <div class="about_box03">
+                                            <img src="img/256-smoke.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about_03_box_li">
+                            <img src="img/about/hexagon.png" alt="">
+                            <div class="about_box">
+                                <div class="about_box01">
+                                    <div class="about_box02">
+                                        <div class="about_box03">
+                                            <img src="img/256-smoke.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about_03_box_li">
+                            <img src="img/about/hexagon.png" alt="">
+                            <div class="about_box">
+                                <div class="about_box01">
+                                    <div class="about_box02">
+                                        <div class="about_box03">
+                                            <img src="img/256-smoke.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid" src="img/home/1.jpg" alt="">
+    </div>
+
+    <div class="footer">
+        <div>
+            友情链接:
+            <a href="http://www.wjceo.com/">暮志未晚</a>
+        </div>
+        <div>Copyright ©2016 代号57 All Rights Reserved 苏ICP备16068436号</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            var nav = $(".header"); //得到导航对象
+            var win = $(window); //得到窗口对象
+            var sc = $(document);//得到document文档对象。
+            var hei = $(".header").height();
+            win.scroll(function () {
+                if (sc.scrollTop() >= hei) {
+                    nav.addClass("header_change");
+                    $(".header_logo_img").attr("src", "img/head/logo2.png");
+                } else {
+                    nav.removeClass("header_change");
+                    $(".header_logo_img").attr("src", "img/head/logow.png");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
