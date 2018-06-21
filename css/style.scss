@@ -488,3 +488,64 @@ li {
     height: 100%;
     z-index: 1;
 }
+
+// about 关于页面
+.about_03_box {
+    display: flex;
+    justify-content: center;
+}
+
+.about_03_box_li {
+    position: relative;
+    width: 10%;
+    display: inline-block;
+}
+
+.about_03_box_li>img {
+    width: 100%;
+}
+
+.about_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.about_box:hover {
+    transform: scale(0.94);
+}
+
+.about_box03::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    transition: all ease 0.2s;
+}
+
+.about_box:hover .about_box03::after {
+    background: rgba(0, 0, 0, 0);
+}
+
+.about_box01,
+.about_box02,
+.about_box03 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(60deg);
+    position: relative;
+}
+
+.about_box03 img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-180deg);
+}
