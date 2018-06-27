@@ -3,16 +3,23 @@
 
 <head>
     <title>首页</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylemb.css">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
-   <!-- 头部 -->
-   <div class="header">
+    <!-- 头部 -->
+    <div class="header ShowPC">
         <nav class="head">
             <!-- logo -->
             <div class="header_logo_out">
@@ -44,6 +51,65 @@
             </div>
         </nav>
     </div>
+    <!-- 手机头部 -->
+    <div class="header_mb ShowMB">
+        <div class="header_mb01">
+            <div class="header_mb01_btn ">
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="header_mb01_logo">
+                <a href="">
+                    <img src="img/head/logomb.png" alt="">
+                </a>
+            </div>
+            <div class="header_mb01_search 	">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div class="header_mb02">
+
+        </div>
+        <div class="header_mb03">
+            <div class="header_mb03_header">
+                <div class="header_mb03_header_img">
+                    <img class="w-100" src="img/head/logow.png" alt="">
+                </div>
+            </div>
+            <div class="header_mb03_inner">
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-home"></i> 首页
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-laptop"></i> 前端
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-coffee"></i> 生活
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="	fa fa-paint-brush"></i> 漫画
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="	fa fa-address-card-o"></i> 关于
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-phone"></i> 联系
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="content content_home">
         <!-- 视频 -->
         <div class="container-fluid home_video">
@@ -205,29 +271,8 @@
         </div>
         <div>Copyright ©2016 代号57 All Rights Reserved 苏ICP备16068436号</div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            var nav = $(".header"); //得到导航对象
-            var win = $(window); //得到窗口对象
-            var sc = $(document);//得到document文档对象。
-            var hei = $(".header").height();
-            win.scroll(function () {
-                if (sc.scrollTop() >= hei) {
-                    nav.addClass("header_change");
-                    $(".header_logo_img").attr("src", "img/head/logo2.png");
-                } else {
-                    nav.removeClass("header_change");
-                    $(".header_logo_img").attr("src", "img/head/logow.png");
-                }
-            })
-        })
-    </script>
+
+
 </body>
 
 </html>

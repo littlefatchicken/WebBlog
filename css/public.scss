@@ -1,4 +1,108 @@
 // publice css
+//******************************************* reset
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 0.75em;
+}
+
+@mixin Aclose {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a {
+    // 正常
+    &:link {
+        @include Aclose;
+    } // 鼠标放上
+    &:hover {
+        @include Aclose;
+    } // 已访问过
+    &:visited {
+        @include Aclose;
+    } // 点击时候
+    &:active {
+        @include Aclose;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+//******************************************* 自定义
+.Body_noscroll {
+    overflow: hidden;
+}
+
+.MAclose {
+    margin: 0;
+}
+
+.PAclose {
+    padding: 0;
+}
+
+.Whitefont {
+    color: white;
+}
+
+.Blackfont {
+    color: black;
+}
+
+.Bolderfont {
+    font-weight: bolder;
+}
+
+.Lighterfont {
+    font-weight: lighter;
+}
+
+.BGtransparent {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.BGtitle1 {
+    font-size: 2.5rem;
+}
+
+.BGtitle2 {
+    font-size: 1.75rem;
+}
+
+.Title {
+    font-size: 1.2rem;
+}
+
+.Content {
+    font-size: 0.8rem;
+}
+
+.Content_small {
+    font-size: 0.7rem;
+}
+
+.BGwhite {
+    background: #fafafa;
+}
+
 // 隐藏滚动条
 .HideScrollBar::-webkit-scrollbar {
     width: 0 !important; // chrome Safari
@@ -10,4 +114,22 @@
 
 .HideScrollBar {
     overflow: -moz-scrollbars-none; // Firefox
+}
+
+@media (min-width:768px) {
+    .ShowPC {
+        display: block;
+    }
+    .ShowMB {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .ShowPC {
+        display: none;
+    }
+    .ShowMB {
+        display: block;
+    }
 }
