@@ -114,6 +114,18 @@ li {
   overflow: -moz-scrollbars-none;
 }
 
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+body {
+  overflow: -moz-scrollbars-none;
+}
+
 @media (min-width: 768px) {
   .ShowPC {
     display: block;

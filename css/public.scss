@@ -116,6 +116,18 @@ li {
     overflow: -moz-scrollbars-none; // Firefox
 }
 
+body::-webkit-scrollbar {
+    width: 0 !important; // chrome Safari
+}
+
+body {
+    -ms-overflow-style: none; // IE 10+
+}
+
+body {
+    overflow: -moz-scrollbars-none; // Firefox
+}
+
 @media (min-width:768px) {
     .ShowPC {
         display: block;
