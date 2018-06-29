@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/liMarquee.css">
-   <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.liMarquee.js"></script>
     <style>
@@ -33,7 +33,7 @@
 
         <h1>
             <i class="fa fa-car">
-                
+
             </i>
         </h1>
         <div class="dowebok">
@@ -77,9 +77,36 @@
         <script>
             $(function () {
                 $('.dowebok').liMarquee();
-                
+
             });
         </script>
+        <div class="boxan1">
+            <div class="boxan2">
+
+            </div>
+        </div>
+        <style>
+            .boxan1 {
+                width: 200px;
+                height: 200px;
+                background: blanchedalmond;
+
+            }
+
+            .boxan2 {
+                width: 20px;
+                height: 20px;
+                background: #333;
+                animation: boxan 2s ease 0s 1 both;
+            }
+
+            @keyframes boxan {
+                0% {
+                    transform: translate(0,0);
+                }
+                100% { transform: translate(10px,20px);}
+            }
+        </style>
     </body>
 
 

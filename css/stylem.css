@@ -20,5 +20,12 @@
   .footer_right {
     display: none;
   }
+  .footer_inner_0101,
+  .footer_inner_0102 {
+    display: block;
+  }
+  .footer_inner_0101_02 i {
+    display: none;
+  }
 }
 /*# sourceMappingURL=stylem.css.map */
