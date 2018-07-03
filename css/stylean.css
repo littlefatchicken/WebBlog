@@ -1,0 +1,29 @@
+.footer_inner_0102an {
+  -webkit-animation: footeran 1s ease 0s infinite both;
+          animation: footeran 1s ease 0s infinite both;
+}
+
+@-webkit-keyframes footeran {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #aaaaf1;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes footeran {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #aaaaf1;
+  }
+  100% {
+    color: white;
+  }
+}
+/*# sourceMappingURL=stylean.css.map */

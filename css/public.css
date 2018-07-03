@@ -12,6 +12,13 @@ body {
   font-size: 0.75em;
 }
 
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 a:link {
   text-decoration: none;
   cursor: pointer;
@@ -50,6 +57,11 @@ li {
   overflow: hidden;
 }
 
+.BG_gird {
+  background-image: url(../img/grid.png);
+  background-origin: border-box;
+}
+
 .MAclose {
   margin: 0;
 }
@@ -86,6 +98,17 @@ li {
   font-size: 1.5rem;
 }
 
+.Title3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.Title4 {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
 .Content {
   font-size: 0.8rem;
 }
@@ -96,6 +119,14 @@ li {
 
 .BGwhite {
   background: #fafafa;
+}
+
+.Color_w {
+  color: white;
+}
+
+.Color_b {
+  color: black;
 }
 
 .HideScrollBar::-webkit-scrollbar {

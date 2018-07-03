@@ -1,0 +1,16 @@
+// footer
+.footer_inner_0102an {
+    animation: footeran 1s ease 0s infinite both;
+}
+
+@keyframes footeran {
+    0% {
+        color: white; 
+    }
+    50% {
+        color: #aaaaf1;
+    }
+    100% {
+        color: white;
+    }
+}
