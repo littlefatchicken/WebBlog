@@ -1,0 +1,37 @@
+/* body:after {
+    position: absolute;
+    z-index: 1;
+    width: 135%;
+    height: 135%;
+    top: 18%;
+    left: 0px;
+    content: '';
+    transform-origin: 50% 50%;
+    transform-style: preserve-3d;
+    animation-name: splash;
+    transition: opacity 3s ease-in-out, transform 5s ease-in-out;
+    opacity: 0.06;
+    transform: rotateX(50deg) rotateZ(0deg) rotateY(0deg) translateY(-14%) translateX(-14%) translateZ(370px);
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    height: 100vh;
+    background: black;
+    background-image: url(https://semantic-ui.com/images/ui.png);
+    background-position: 0% 0%;
+    animation: splash 5s linear 1s infinite both;
+}
+
+@keyframes splash {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% -475px;
+    }
+}

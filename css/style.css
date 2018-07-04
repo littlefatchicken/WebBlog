@@ -259,16 +259,20 @@
   background-attachment: fixed;
 }
 
-.home_frontend .home_preface_img {
-  background-image: url("../img/home/7.jpg");
-}
-
 .home_bg01 {
-  background-image: url(../img/home/001.jpg);
+  background-image: url(../img/home/003.jpg);
 }
 
 .home_bg02 {
-  background-image: url(../img/home/003.jpg);
+  background-image: url(../img/home/007.jpg);
+}
+
+.home_bg03 {
+  background-image: url(../img/home/004.jpg);
+}
+
+.home_bg04 {
+  background-image: url(../img/home/006.jpg);
 }
 
 .footer {
@@ -328,34 +332,65 @@
   padding: 0.5rem 0;
 }
 
-#web_canvas canvas {
-  width: 100% !important;
-  height: auto !important;
-}
-
 .dg {
   display: none;
 }
 
-.web_canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+.web_canvas_out {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1500;
+          perspective: 1500;
+  height: 50vh;
+  position: relative;
 }
 
-.canvas_text {
-  height: 39vh;
+.web_canvas {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  background: black;
+  background-image: url(https://semantic-ui.com/images/ui.png);
+  background-position: 0% 0%;
+  -webkit-animation: splash 8s linear 1s infinite both;
+          animation: splash 8s linear 1s infinite both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
+}
+
+@-webkit-keyframes splash {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -475px;
+  }
+}
+
+@keyframes splash {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% -475px;
+  }
+}
+
+#canvas_web01,
+#canvas_web02 {
+  width: 100%;
+  height: auto;
 }
 
 .web_content1 {
