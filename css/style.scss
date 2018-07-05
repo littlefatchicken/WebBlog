@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     .head {
         display: table;
@@ -318,27 +318,30 @@
 }
 
 // web页面
-.web_canvas_out {
+.web_canvas {
+    position: relative;
+}
+
+.web_canvas_01 {
     transform-style: preserve-3d;
     perspective: 1500;
     height: 50vh;
     position: relative;
+    overflow: hidden;
 }
 
-.web_canvas {
+.web_canvas_01_bg {
     position: absolute;
     width: 100%;
     height: 50vh;
     top: 0;
     left: 0;
-    background: black;
+    background: #fff;
     background-image: url(https://semantic-ui.com/images/ui.png);
     background-position: 0% 0%;
-    animation: splash 8s linear 1s infinite both;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    transform: rotateX(45deg);
+    animation: splash 10s linear 1s infinite both;
+    transform: rotateX(45deg) scale(2);
+    background-attachment: fixed;
 }
 
 @keyframes splash {
@@ -350,12 +353,30 @@
     }
 }
 
-.canvas_text {}
+.web_canvas_01::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-#canvas_web01,
+.web_canvas_02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 #canvas_web02 {
     width: 100%;
     height: auto;
+    z-index: 1;
 }
 
 .web_content1 {
@@ -502,16 +523,6 @@
     z-index: 0;
 }
 
-// .wd_01_inner02::after {
-//     content: " ";
-//     position: absolute;
-//     top: 0;
-//     right: -10px;
-//     height: 100%;
-//     width: 10px;
-//     box-shadow: 1px 0px 40px rgba(146, 146, 146, 0.49);
-//     z-index: 0;
-// }
 .wd_01_inner02_in {
     z-index: 0;
 }
@@ -532,7 +543,7 @@
 }
 
 .wd_02 {
-    width: 45%; // background: #b5b5b5;
+    width: 45%;
     background: #ffffff;
     overflow-y: scroll;
     padding: 0 15px;
@@ -548,7 +559,7 @@
 }
 
 .wd_03 {
-    width: 45%; // background: #c6c6c6;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
