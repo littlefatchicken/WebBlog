@@ -339,7 +339,7 @@
     background: #fff;
     background-image: url(https://semantic-ui.com/images/ui.png);
     background-position: 0% 0%;
-    animation: splash 10s linear 1s infinite both;
+    animation: splash 15s linear -15s infinite both;
     transform: rotateX(45deg) scale(2);
     background-attachment: fixed;
 }
@@ -383,19 +383,78 @@
     padding: 2.5rem 0;
 }
 
-.web_con1_li {
-    padding-bottom: 15px;
+.web_con1_title {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
 }
 
-.web_con1_img {}
+.web_con1_i {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
 
-.web_con1_title {}
+.web_con1_i i {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.web_con1_article_details {}
+.web_con1_text {
+    text-align: center;
+}
 
-.web_con1_article_author {}
+.web_con1_btn {
+    font-size: 1.2rem;
+    color: #f7f7f7;
+    background: red;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: 4rem 0;
+}
 
-.web_con1_article_time {}
+.web_content2 {
+    padding: 2.5rem 0;
+    background-image: url(../img/web/002.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.web_con2_li {
+    padding-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+    transition: all ease 0.2s;
+    padding: 5px;
+}
+
+.web_con2_li:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.web_con2_li_01 {}
+
+.web_con2_li_01 img {
+    // opacity: .8;
+}
+
+.web_con2_li_02 {}
+
+.web_con2_title {}
+
+.web_con2_article_details {}
+
+.web_con2_article_author {}
+
+.web_con2_article_time {}
 
 // weblist 前端列表页
 .wl_search {

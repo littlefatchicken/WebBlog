@@ -359,8 +359,8 @@
   background: #fff;
   background-image: url(https://semantic-ui.com/images/ui.png);
   background-position: 0% 0%;
-  -webkit-animation: splash 10s linear 1s infinite both;
-          animation: splash 10s linear 1s infinite both;
+  -webkit-animation: splash 15s linear -15s infinite both;
+          animation: splash 15s linear -15s infinite both;
   -webkit-transform: rotateX(45deg) scale(2);
           transform: rotateX(45deg) scale(2);
   background-attachment: fixed;
@@ -418,8 +418,70 @@
   padding: 2.5rem 0;
 }
 
-.web_con1_li {
+.web_con1_title {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.web_con1_i {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.web_con1_i i {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.web_con1_text {
+  text-align: center;
+}
+
+.web_con1_btn {
+  font-size: 1.2rem;
+  color: #f7f7f7;
+  background: red;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.web_content2 {
+  padding: 2.5rem 0;
+  background-image: url(../img/web/002.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.web_con2_li {
   padding-bottom: 15px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  padding: 5px;
+}
+
+.web_con2_li:hover {
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 .wl_search {
