@@ -2,40 +2,27 @@
 <html lang="en">
 
 <head>
-    <title>关于我们</title>
-    <!-- Required meta tags -->
+    <title>前端</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/liMarquee.css">
+    <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .dowebok {
-            width: 100%;
-            margin-bottom: 0.5rem;
-        }
+    <link rel="stylesheet" href="css/stylem.css">
+    <link rel="stylesheet" href="css/stylean.css">
 
-        .dowebok a {
-            margin: 0 15px;
-            color: #000;
-            text-decoration: none;
-            font-size: 1rem;
-            display: inline-block;
-            line-height: 1rem;
-            padding: 0 5px;
-        }
-
-        .dowebok a:hover {
-            background: #bbc7e8;
-
-            border-radius: 5px;
-        }
-    </style>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.liMarquee.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
     <!-- 头部 -->
-    <div class="header">
+    <div class="header ShowPC">
         <nav class="head">
             <!-- logo -->
             <div class="header_logo_out">
@@ -52,10 +39,10 @@
                         <a href="Web.html">前端</a>
                     </li>
                     <li>
-                        <a href="Cartoon.html">漫画</a>
+                        <a href="Life.html">生活</a>
                     </li>
                     <li>
-                        <a href="Life.html">生活</a>
+                        <a href="Cartoon.html">漫画</a>
                     </li>
                     <li>
                         <a href="About.html">关于</a>
@@ -67,7 +54,65 @@
             </div>
         </nav>
     </div>
+    <!-- 手机头部 -->
+    <div class="header_mb ShowMB">
+        <div class="header_mb01">
+            <div class="header_mb01_btn ">
+                <i class="fa fa-align-justify"></i>
+            </div>
+            <div class="header_mb01_logo">
+                <a href="">
+                    <img src="img/head/logomb.png" alt="">
+                </a>
+            </div>
+            <div class="header_mb01_search 	">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div class="header_mb02">
 
+        </div>
+        <div class="header_mb03">
+            <div class="header_mb03_header">
+                <div class="header_mb03_header_img">
+                    <img class="w-100" src="img/head/logow.png" alt="">
+                </div>
+            </div>
+            <div class="header_mb03_inner">
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-home"></i> 首页
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-laptop"></i> 前端
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-coffee"></i> 生活
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="	fa fa-paint-brush"></i> 漫画
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="	fa fa-address-card-o"></i> 关于
+                    </a>
+                </div>
+                <div class="header_mb03_li">
+                    <a href="">
+                        <i class="fa fa-phone"></i> 联系
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
     <div class="content content_about">
         <!-- 1 -->
         <div class="about_01">
@@ -252,59 +297,73 @@
                 </div>
             </div>
         </div>
-        <img class="img-fluid" src="img/home/1.jpg" alt="">
+
     </div>
 
-    <div class="footer">
-        <div>
-            友情链接:
-            <a href="http://www.wjceo.com/">暮志未晚</a>
+    <img class="img-fluid" src="img/home/1.jpg" alt="">
+    <!-- 底部导航 -->
+    <div class="footer ShowPC">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  footer_inner">
+                    <div class="footer_inner_01">
+                        <div class="footer_inner_0101">
+                            友情链接:
+                            <span class="footer_inner_0101_01">
+                                <a href="http://www.wjceo.com/">暮志未晚</a>
+                                <a href="http://www.wjceo.com/">XXX</a>
+                                <a href="http://www.wjceo.com/">XXXXxX</a>
+                                <a href="http://www.wjceo.com/">XXX</a>
+                                <a href="http://www.wjceo.com/">XXXXxX</a>
+                            </span>
+                            <span class="footer_inner_0101_02">
+                                <a href="">
+                                    <strong>MORE</strong>
+                                    <strong class="fa fa-hand-o-left"></strong>
+                                </a>
+                                <i>|</i>
+                            </span>
+                        </div>
+
+                        <div class="footer_inner_0102 footer_234">
+                            <a href="">
+                                <i class="fa fa-codepen"></i>神笔
+                            </a>
+                            <a href="">
+                                <i class="fa fa-github-alt"></i>小猫
+                            </a>
+                            <a href="">
+                                <i class="fa fa-youtube"></i>油管
+                            </a>
+                            <a href="">
+                                <i class="fa fa-qq"></i>企鹅
+                            </a>
+                            <a href="">
+                                <i class="fa fa-wechat"></i>微信
+                            </a>
+                            <a href="">
+                                <i class="fa fa-facebook-square"></i>脸书
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>推特
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google"></i>谷歌
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_inner_02">Copyright ©2016 代号57 All Rights Reserved 苏ICP备16068436号</div>
+                </div>
+            </div>
         </div>
-        <div>Copyright ©2016 代号57 All Rights Reserved 苏ICP备16068436号</div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/jquery.liMarquee.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            var nav = $(".header"); //得到导航对象
-            var win = $(window); //得到窗口对象
-            var sc = $(document);//得到document文档对象。
-            var hei = $(".header").height();
-            win.scroll(function () {
-                if (sc.scrollTop() >= hei) {
-                    nav.addClass("header_change");
-                    $(".header_logo_img").attr("src", "img/head/logo2.png");
-                } else {
-                    nav.removeClass("header_change");
-                    $(".header_logo_img").attr("src", "img/head/logow.png");
-                }
-            })
-
-            $('.about_scrolltext01').liMarquee(
-                {
-                    hoverstop: false,
-                    scrollamount: 20
-                }
-            );
-            $('.about_scrolltext02').liMarquee({
-                direction: 'right',
-                hoverstop: false,
-                scrollamount: 20
-            });
-            $('.about_scrolltext03').liMarquee(
-                {
-                    hoverstop: false,
-                    scrollamount: 20
-                }
-            );
-        })
-
-    </script>
+    <!-- 手机底部导航 -->
+    <div class="footer_mb ShowMB">
+        Copyright ©2016 代号57
+    </div>
+    <!-- <script src="js/web_canvas01.js"></script> -->
+    <script src="js/web_canvas02.js"></script>
 </body>
+
 
 </html>

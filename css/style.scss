@@ -420,8 +420,14 @@
     margin: 4rem 0;
 }
 
+.web_con2_classify_title {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .web_content2 {
-    padding: 2.5rem 0;
+    padding: 5rem 0;
     background-image: url(../img/web/002.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -431,13 +437,9 @@
 .web_con2_li {
     padding-bottom: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+    background: white;
     transition: all ease 0.2s;
     padding: 5px;
-}
-
-.web_con2_li:hover {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    background: white;
 }
 
 .web_con2_li_01 {}
@@ -448,9 +450,37 @@
 
 .web_con2_li_02 {}
 
-.web_con2_title {}
+.web_con2_title {
+    overflow: hidden;
+    display: -webkit-box; // 将对象作为弹性伸缩盒子模型显示 。
+    text-overflow: ellipsis; // 可以用来多行文本的情况下，用省略号“...”隐藏超出范围的文本 。
+    -webkit-box-orient: vertical; // 设置或检索伸缩盒对象的子元素的排列方式 。
+    -webkit-line-clamp: 2; // 限制在一个块元素显示的文本的行数。
+}
 
-.web_con2_article_details {}
+.web_con2_classify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.web_con2_classify_01 {}
+
+.web_con2_classify_02 {}
+
+.web_con2_article_details {
+    background: #f7f7f7;
+    border-top: 1px solid #d6d4d4;
+}
+
+.web_con2_article_details01 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.web_con2_article_details02 {
+    display: flex;
+    justify-content: space-between;
+}
 
 .web_con2_article_author {}
 
@@ -743,4 +773,35 @@
     width: 100%;
     height: 100%;
     transform: rotate(-180deg);
+}
+
+.dowebok {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.dowebok a {
+    margin: 0 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1rem;
+    padding: 0 5px;
+}
+
+.dowebok a:hover {
+    background: #bbc7e8;
+    border-radius: 5px;
+}
+
+//生活
+.life_content1 {}
+
+.carousel-inner {
+    height: 50vh;
+}
+
+.carousel-item {
+    height: 100%;
 }
