@@ -337,7 +337,7 @@
     top: 0;
     left: 0;
     background: #fff;
-    background-image: url(https://semantic-ui.com/images/ui.png);
+    background-image: url(../img/web/ui.png);
     background-position: 0% 0%;
     animation: splash 15s linear -15s infinite both;
     transform: rotateX(45deg) scale(2);
@@ -804,4 +804,52 @@
 
 .carousel-item {
     height: 100%;
+}
+
+.life_con2_title {
+    font-size: 2.4rem;
+    font-weight: bolder;
+    padding: 2rem 0;
+}
+
+.life_con2_text {
+    padding-bottom: 2rem;
+}
+
+.life_con2_img {
+    padding-bottom: 2rem;
+}
+
+.life_content3 {
+    background: #F9F9F9;
+    padding: 4rem 0;
+}
+
+.life_con3_con_out {
+    padding-bottom: 1.5rem;
+}
+
+.life_con3_con {
+    transition: all ease 0.3s;
+}
+
+.life_con3_title {
+    color: #373A41;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+
+.life_con3_txt {
+    padding: 0.5rem 0.5rem;
+}
+
+.life_con3_text {
+    color: #727272;
+    font-size: 0.7rem;
+}
+
+.life_con3_con:hover {
+    background: #fff;
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.15);
 }
